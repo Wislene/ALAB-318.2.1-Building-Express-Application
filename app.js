@@ -12,7 +12,7 @@ app.set('view engine', 'pug');
 app.use(express.urlencoded({ extended: false }));
 
 // Serve static files
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'data')));
 
 // Middleware for logging requests
 app.use((req, res, next) => {

@@ -1,14 +1,10 @@
-UserName: john
-userId: 1
-Age: 32
-occupation: Painter
+// Users Data
 
-Name: Louis
-userId: 2
-Age: 30
-occupation: Lawyer
 
-Name: Sally
-userId: 3
-Age: 25
-occupation: StockTrader
+const users = [
+  { userId: 1, username: 'john', age: 32, occupation: 'Painter' },
+  { userId: 2, username: 'louis', age: 30, occupation: 'Lawyer' },
+  { userId: 3, username: 'sally', age: 25, occupation: 'StockTrader' },
+];
+
+module.exports = users;
