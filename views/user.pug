@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1 User Profile for #{user.username}
+  p Age: #{user.age}
+  p Occupation: #{user.occupation}
+  form(action='/users/download' method='GET')
+    button(type='submit') Download User Data

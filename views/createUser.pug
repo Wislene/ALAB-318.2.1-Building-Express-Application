@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1 Create a New User
+  form(action='/users/create' method='POST')
+    label(for='username') Username:
+    input(type='text' id='username' name='username' required)
+    label(for='age') Age:
+    input(type='number' id='age' name='age' required)
+    label(for='occupation') Occupation:
+    input(type='text' id='occupation' name='occupation' required)
+    button(type='submit') Create User
